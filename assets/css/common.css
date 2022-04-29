@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Zhi+Mang+Xing&display=swap");
+@import url("https://cdn.bootcdn.net/ajax/libs/font-awesome/5.10.0/css/all.min.css");
+
+/* 字体 */
+.caoshu {
+  font-family: "Zhi Mang Xing", cursive;
+}
+
+.kaiti {
+  font-family: "Ma Shan Zheng", cursive;
+}
+
+/* html,body,#__nuxt,#__layout,#zzjtnb,main {
+	width:100%;
+	height:100%;
+} */
+@media (max-width:768px) {
+
+  .markdown-body .highlight pre,
+  .markdown-body pre {
+    padding: 0 !important;
+  }
+}
+
+.hljs,
+.markdown-body pre code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* 断字 */
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.5em;
+  max-height: 4.5em;
+  width: 100%;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1rem;
+  word-break: break-all;
+}
+
+.block-with-text:before {
+  content: "...";
+  position: absolute;
+  right: .2em;
+  bottom: 0;
+  font-weight: bolder;
+}
+
+.block-with-text:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: .4em;
+}
+
+/* 滚动条 */
+/*::-webkit-scrollbar 滚动条整体部分::-webkit-scrollbar-thumb 滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）::-webkit-scrollbar-track 滚动条的轨道（里面装有Thumb）::-webkit-scrollbar-button 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）::-webkit-scrollbar-corner 边角，即两个滚动条的交汇处::-webkit-resizer 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件 */
+::-webkit-scrollbar {
+  width: 0.7rem;
+  border-radius: 1rem;
+  background-color: #f5f5f5;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, .5);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1rem;
+  background-color: #f5f5f5;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+p code {
+  color: red;
+}
+
+.v-note-wrapper li {
+  list-style: disc;
+}

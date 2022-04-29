@@ -1,0 +1,19 @@
+/* 路由统一动效 */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+/*单路由动画->组件内部 transition:'类名' */
+/* .blog-enter-active,
+.blog-list-leave-active {
+  transition: .5s ease all;
+}
+.blog-enter-active,
+.blog-leave-to {
+  margin-left: -1000px;
+} */
